@@ -25,7 +25,5 @@ npm i -g csvtojson
 
 Użycie:
 ```
-npm i -g csvtojson
-```
 csvtojson source.csv > converted.json
 ```
