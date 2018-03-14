@@ -15,3 +15,17 @@ TODO:
 - [ ] Praca z replica set na 3 komputerach
 - [ ] Napisanie skryptu do importów i liczeniu czasu
 - [ ] Przetestowanie skryptu
+
+
+Konwersja danych CSV to JSON ([csvtojson](https://www.npmjs.com/package/csvtojson)):
+Instalacja:
+```
+npm i -g csvtojson
+```
+
+Użycie:
+```
+npm i -g csvtojson
+```
+csvtojson source.csv > converted.json
+```
