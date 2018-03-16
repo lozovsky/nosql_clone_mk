@@ -18,6 +18,7 @@ TODO:
 
 
 Konwersja danych CSV to JSON ([csvtojson](https://www.npmjs.com/package/csvtojson)):
+
 Instalacja:
 ```
 npm i -g csvtojson
