@@ -11,10 +11,21 @@ TODO:
 - [x] Konwersja danych CSV to JSON
 - [x] Instalaja mongoDB
 - [x] Import danych do mongoDB
-- [ ] Praca z replica set na localhost
+- [x] Praca z replica set na localhost
 - [ ] Praca z replica set na 3 komputerach
-- [ ] Napisanie skryptu do importów i liczeniu czasu
+- [ ] Napisanie skryptu do importów i liczenie czasu
 - [ ] Przetestowanie skryptu
+
+Tabelka z czasami dla moich danych:
+
+| Typ importu  | czas real	    | czas user     | sys           |
+| :---         |     ---      |          --- |          --- |
+| standalone   |   8m27.309s     | 2m36.964s    | 0m8.096s    |
+| replica set default     | 35m50.572s      | 3m10.512s      | 0m10.108s      |
+| replica set {w: 1, j: false}     | 23m18.152s      | 3m7.120s      | 0m9.692s      |
+| replica set {w: 1, j: true}     | trwają prace       | trwają prace      | trwają prace      |
+| replica set {w: 2, j: false}     | trwają prace       | trwają prace      | trwają prace      |
+| replica set {w: 2, j: true}    | trwają prace       | trwają prace      | trwają prace      |
 
 
 Konwersja danych CSV to JSON ([csvtojson](https://www.npmjs.com/package/csvtojson)):
