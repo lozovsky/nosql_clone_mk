@@ -13,8 +13,12 @@ TODO:
 - [x] Import danych do mongoDB
 - [x] Praca z replica set na localhost
 - [ ] Praca z replica set na 3 komputerach
-- [ ] Napisanie skryptu do importów i liczenie czasu
+- [x] Napisanie skryptu do importów i liczenia czasu
 - [ ] Przetestowanie skryptu
+- [ ] Napisanie skryptu do tworzenia tabelki
+- [ ] Napisanie wniosków
+
+
 
 Tabelka z czasami dla moich danych:
 
