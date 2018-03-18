@@ -1,0 +1,48 @@
+
+[width="100%",cols=">s,^,,,,,",options="header"]
+|==========================
+|      5+|Standalone | Average
+|real time       |1m38.147s  |1m36.932s |1m37.216s |1m36.338s |1m36.360s |01m36s
+|user time       |2m17.912s  |2m19.600s |2m18.704s |2m18.120s |2m18.744s |02m18s
+|sys time        |0m6.652s   |0m6.448s  |0m6.344s  |0m6.408s  |0m6.468s  |00m06s
+|==========================
+
+[width="100%",cols=">s,^,,,,,",options="header"]
+|==========================
+|      5+|Replica Set { "w" : 1, "wtimeout" : 0 }  | Average
+|real time       |16m27.641s  |15m51.086s |15m35.050s |15m37.028s |15m32.078s |15m48s
+|user time       |3m8.480s  |3m9.280s |3m4.580s |3m6.840s |3m6.076s |03m07s
+|sys time        |0m9.736s   |0m9.768s  |0m9.616s |0m9.712s |0m9.608s  |00m09s
+|==========================
+
+[width="100%",cols=">s,^,,,,,",options="header"]
+|==========================
+|      5+|Replica Set {w: 1, j: false}  | Average
+|real time       |9m9.337s  |8m52.308s |8m52.521s |8m52.036s |8m56.030s |08m56s
+|user time       |2m34.184s  |2m29.664s |2m30.652s |2m29.152s |2m29.972s |02m30s
+|sys time        |0m6.936s   |0m6.616s  |0m6.372s |0m6.488s |0m6.428s  |00m06s
+|==========================
+
+[width="100%",cols=">s,^,,,,,",options="header"]
+|==========================
+|      5+|Replica Set {w: 1, j: true} | Average
+|real time       |16m1.687s  |15m53.183s |15m54.487s |15m43.585s |15m53.449s |15m53s
+|user time       |3m5.688s  |3m6.988s |3m6.036s |3m4.804s |3m3.668s |03m05s
+|sys time        |0m9.672s  |0m9.768s  |0m10.340s |0m9.696s |0m9.856s  |00m09s
+|==========================
+
+[width="100%",cols=">s,^,,,,,",options="header"]
+|==========================
+|      5+|Replica Set {w: 2, j: false}  | Average
+|real time       |9m29.619s  |9m28.220s |9m27.425s |9m22.693s |9m23.609s |09m26s
+|user time       |2m24.572s  |2m24.176s |2m24.748s |2m23.612s |2m23.472s |02m24s
+|sys time        |0m5.992s   |0m5.904s  |0m6.028s  |0m5.836s |0m6.144s |00m05s
+|==========================
+
+[width="100%",cols=">s,^,,,,,",options="header"]
+|==========================
+|      5+|Replica Set {w: 2, j: true}  | Average
+|real time       |16m25.917s  |16m44.962s |16m41.072s |16m40.935s |16m34.957s |16m37s
+|user time       |3m10.840s  |3m9.388s |3m11.100s |3m10.748s |3m6.820s |03m09s
+|sys time        |0m10.208s   |0m9.764s  |0m9.908s |0m10.568s |0m9.592s  |00m10s
+|==========================
