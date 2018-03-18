@@ -13,7 +13,7 @@ db.alarms.stats( { scale : 1024 } )
 }
 
 
-### Tabelki z czasami dla poszczególnych ustawień importów:
+### Tabelki z czasami dla poszczególnych ustawień importów
 
 [width="100%",cols=">s,^,^,^,^,^,^",options="header"]
 |==========================
