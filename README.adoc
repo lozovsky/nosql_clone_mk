@@ -2,7 +2,6 @@
 
 Informacje o zbiorze danych (w KB):
 [source,js]
----
 db.alarms.stats( { scale : 1024 } )
 {
 	"ns" : "test.alarms",
@@ -12,11 +11,11 @@ db.alarms.stats( { scale : 1024 } )
 	"storageSize" : 218156,
 	 ...
 }
----
 
-# Tabelki z czasami dla poszczególnych ustawień importów:
 
-[width="100%",cols=">s,^,,,,,",options="header"]
+### Tabelki z czasami dla poszczególnych ustawień importów:
+
+[width="100%",cols=">s,^,^,^,^,^,^",options="header"]
 |==========================
 |      5+|Standalone | Average
 |real time       |1m38.147s  |1m36.932s |1m37.216s |1m36.338s |1m36.360s |01m36s
@@ -24,7 +23,7 @@ db.alarms.stats( { scale : 1024 } )
 |sys time        |0m6.652s   |0m6.448s  |0m6.344s  |0m6.408s  |0m6.468s  |00m06s
 |==========================
 
-[width="100%",cols=">s,^,,,,,",options="header"]
+[width="100%",cols=">s,^,^,^,^,^,^",options="header"]
 |==========================
 |      5+|Replica Set { w : 1, wtimeout : 0 }  | Average
 |real time       |16m27.641s  |15m51.086s |15m35.050s |15m37.028s |15m32.078s |15m48s
@@ -32,7 +31,7 @@ db.alarms.stats( { scale : 1024 } )
 |sys time        |0m9.736s   |0m9.768s  |0m9.616s |0m9.712s |0m9.608s  |00m09s
 |==========================
 
-[width="100%",cols=">s,^,,,,,",options="header"]
+[width="100%",cols=">s,^,^,^,^,^,^",options="header"]
 |==========================
 |      5+|Replica Set {w: 1, j: false}  | Average
 |real time       |9m9.337s  |8m52.308s |8m52.521s |8m52.036s |8m56.030s |08m56s
@@ -40,7 +39,7 @@ db.alarms.stats( { scale : 1024 } )
 |sys time        |0m6.936s   |0m6.616s  |0m6.372s |0m6.488s |0m6.428s  |00m06s
 |==========================
 
-[width="100%",cols=">s,^,,,,,",options="header"]
+[width="100%",cols=">s,^,^,^,^,^,^",options="header"]
 |==========================
 |      5+|Replica Set {w: 1, j: true} | Average
 |real time       |16m1.687s  |15m53.183s |15m54.487s |15m43.585s |15m53.449s |15m53s
@@ -48,7 +47,7 @@ db.alarms.stats( { scale : 1024 } )
 |sys time        |0m9.672s  |0m9.768s  |0m10.340s |0m9.696s |0m9.856s  |00m09s
 |==========================
 
-[width="100%",cols=">s,^,,,,,",options="header"]
+[width="100%",cols=">s,^,^,^,^,^,^",options="header"]
 |==========================
 |      5+|Replica Set {w: 2, j: false}  | Average
 |real time       |9m29.619s  |9m28.220s |9m27.425s |9m22.693s |9m23.609s |09m26s
@@ -56,7 +55,7 @@ db.alarms.stats( { scale : 1024 } )
 |sys time        |0m5.992s   |0m5.904s  |0m6.028s  |0m5.836s |0m6.144s |00m05s
 |==========================
 
-[width="100%",cols=">s,^,,,,,",options="header"]
+[width="100%",cols=">s,^,^,^,^,^,^",options="header"]
 |==========================
 |      5+|Replica Set {w: 2, j: true}  | Average
 |real time       |16m25.917s  |16m44.962s |16m41.072s |16m40.935s |16m34.957s |16m37s
@@ -64,7 +63,7 @@ db.alarms.stats( { scale : 1024 } )
 |sys time        |0m10.208s   |0m9.764s  |0m9.908s |0m10.568s |0m9.592s  |00m10s
 |==========================
 
-# Wnioski
+### Wnioski
 * Import wykonuje się najszybciej przy Standalone.
 * W przypadku Replica Set najszybciej wykonkują się importy przy ustawieniach {... j: false}.
 * Duże zbiory danych potrzebują dużej mocy obliczeniowej, aby wykonywać się stusunkowo szybko.
