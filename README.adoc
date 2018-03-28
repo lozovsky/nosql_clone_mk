@@ -14,18 +14,18 @@ db.alarms.stats( { scale : 1024 } )
 
 ### Skrypty
 W folderze standalone znajduje się skrypt do przeprowadzenia tego importu.
-1. W pliku czasy.sh zmieniamy sciezkę do pliku csv.
-2. Uruchamiamy skrypt czasy.sh.
-3. Czasy poszczególnych importów pojawią się w plikach czas_1.txt, czas_2.txt, itd.
-4. Uruchamiamy skrypt avg.sh.
-5. W pliku srednia.txt mamy sredni czas wykonania.
+- 1. W pliku czasy.sh zmieniamy sciezkę do pliku csv.
+- 2. Uruchamiamy skrypt czasy.sh.
+- 3. Czasy poszczególnych importów pojawią się w plikach czas_1.txt, czas_2.txt, itd.
+- 4. Uruchamiamy skrypt avg.sh.
+- 5. W pliku srednia.txt mamy sredni czas wykonania.
 
 Analogicznie importy można wykonać w replica set
-replica1 -> { w : 1, wtimeout : 0 } (domyślne ustawienia)
-replica2 -> {w: 1, j: false}
-replica3 -> {w: 1, j: true}
-replica4 -> {w: 2, j: false}
-replica5 -> {w: 2, j: true}
+* replica1 -> { w : 1, wtimeout : 0 } (domyślne ustawienia)
+* replica2 -> {w: 1, j: false}
+* replica3 -> {w: 1, j: true}
+* replica4 -> {w: 2, j: false}
+* replica5 -> {w: 2, j: true}
 
 
 
