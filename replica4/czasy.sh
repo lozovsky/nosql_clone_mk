@@ -1,5 +1,5 @@
 dane=/home/michal/Pobrane/baltimore-911-calls.zip
-#replica {w:1, j:false}
+#replica {w: 2, j: false}
 
 
 
@@ -10,4 +10,3 @@ for ((i=1; $i<= 5;i++)) ; do
 	tail -3 "$i.txt" > "czas_$i.txt"
 	rm "$i.txt"
 done
-
