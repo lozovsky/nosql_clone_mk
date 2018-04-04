@@ -56,6 +56,9 @@ srednia_real=$(calc $all_sum_real_time/$liczba_ele)
 srednia_user=$(calc $all_sum_user_time/$liczba_ele)
 srednia_sys=$(calc $all_sum_sys_time/$liczba_ele)
 
+rm -f $1/srednia.txt
+
+
 date -d@"$srednia_real" -u +%Mm%Ss >> $1/srednia.txt
 date -d@"$srednia_user" -u +%Mm%Ss >> $1/srednia.txt
 date -d@"$srednia_sys" -u +%Mm%Ss >> $1/srednia.txt
