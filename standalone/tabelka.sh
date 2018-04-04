@@ -1,5 +1,5 @@
 #!/bin/bash
-
+type="Standalone"
 calc(){ awk "BEGIN { print $* }"; }
 for ((i=1; $i<=5; i++));do
 line1=($(head -n 1 "czas_"$i".txt"))
@@ -27,17 +27,13 @@ done
 readarray avg_table < srednia.txt
 
 
-echo ${real_table[*]}
-echo ${user_table[*]}
-echo ${sys_table[*]}
-echo ${avg_table[*]}
 
 rm -f tab.adoc
 
 echo "[width='100%',cols='>s,^,^,^,^,^,^',options='header']" >> tab.adoc
 echo "|==========================" >> tab.adoc
-echo "|      5+|Standalone | Average" >> tab.adoc
+echo "|      5+|$type | Average" >> tab.adoc
 echo "|real time       |${real_table[0]}  |${real_table[1]} |${real_table[2]} |${real_table[3]} |${real_table[4]} |${avg_table[0]}" >> tab.adoc
-echo "|user time       |${user_table[0]}  |${user_table[1]} |${user_table[2]} |${user_table[3]} |${user_table[4]} |${user_table[1]}" >> tab.adoc
+echo "|user time       |${user_table[0]}  |${user_table[1]} |${user_table[2]} |${user_table[3]} |${user_table[4]} |${avg_table[1]}" >> tab.adoc
 echo "|sys time        |${sys_table[0]}  |${sys_table[1]} |${sys_table[2]} |${sys_table[3]} |${sys_table[4]} |${avg_table[2]}" >> tab.adoc
 echo "|==========================" >> tab.adoc
