@@ -1,10 +1,19 @@
 #!/bin/bash
+
+convertsecs() {
+ h=$(bc -l <<< "${1}/3600")
+ m=$(bc -l <<< "(${1}%3600)/60")
+ s=$(bc -l <<< "${1}%60")
+ printf "%02d:%02d" $h $m
+}
+
+
 calc(){ awk "BEGIN { print $* }"; }
 for ((i=1; $i<=5; i++));do
-line1=($(head -n 1 "czas_"$i".txt"))
-temp_line2=($(head -n 2 "czas_"$i".txt"))
+line1=($(head -n 1 $1/"czas_"$i".txt"))
+temp_line2=($(head -n 2 $1/"czas_"$i".txt"))
 line2="${temp_line2[3]}"
-line3=($(tail -n 1 "czas_"$i".txt"))
+line3=($(tail -n 1 $1/"czas_"$i".txt"))
 
 
 real_time=${line1[1]}
@@ -43,6 +52,13 @@ all_sum_user_time=$(echo "${sum_user[0]}+${sum_user[1]}+${sum_user[2]}+${sum_use
 all_sum_sys_time=$(echo "${sum_sys[0]}+${sum_sys[1]}+${sum_sys[2]}+${sum_sys[3]}+${sum_sys[4]}" | bc)
 
 liczba_ele=5
-calc $all_sum_real_time/$liczba_ele >> avg.txt
-calc $all_sum_user_time/$liczba_ele >> avg.txt
-calc $all_sum_sys_time/$liczba_ele >> avg.txt
+srednia_real=$(calc $all_sum_real_time/$liczba_ele)
+srednia_user=$(calc $all_sum_user_time/$liczba_ele)
+srednia_sys=$(calc $all_sum_sys_time/$liczba_ele)
+
+rm -f $1/srednia.txt
+
+
+date -d@"$srednia_real" -u +%Mm%Ss >> $1/srednia.txt
+date -d@"$srednia_user" -u +%Mm%Ss >> $1/srednia.txt
+date -d@"$srednia_sys" -u +%Mm%Ss >> $1/srednia.txt

@@ -13,6 +13,46 @@ db.alarms.stats( { scale : 1024 } )
 }
 
 
+Struktura bazy:
+[source,js]
+db.alarms.findOne()
+{
+	"_id" : ObjectId("5ac48f79f6968ccc1f0274f1"),
+	"" : 1,
+	"callDateTime" : "2015-07-13 10:47:00",
+	"priority" : "Medium",
+	"district" : "CD",
+	"description" : "911/NO  VOICE",
+	"callNumber" : "P151941003",
+	"incidentLocation" : "600 E FAYETTE ST",
+	"location" : "(39.2906737,-76.6071600)"
+}
+
+### Skrypty
+Uruchamiamy skrypt script.sh.
+
+1. Czasy poszczególnych importów pojawią się w plikach czas_1.txt, czas_2.txt, itd. w odpowiednich folderch.
+
+2. W pliku srednia.txt mamy sredni czas wykonania odpowiedniego importu.
+
+3. W pliku tab.adoc znajdzuje się tabelka z czasami.
+
+
+Opis
+
+* replica1 -> { w : 1, wtimeout : 0 } (domyślne ustawienia)
+
+* replica2 -> {w: 1, j: false}
+
+* replica3 -> {w: 1, j: true}
+
+* replica4 -> {w: 2, j: false}
+
+* replica5 -> {w: 2, j: true}
+
+
+
+
 ### Tabelki z czasami dla poszczególnych ustawień importów
 
 [width="100%",cols=">s,^,^,^,^,^,^",options="header"]
