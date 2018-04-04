@@ -11,6 +11,9 @@ db.alarms.stats( { scale : 1024 } )
 	"storageSize" : 218156,
 	 ...
 }
+Struktura bazy:
+[source,js]
+{ "_id" : ObjectId("5ac48832f6968ccc1fd7bbc7"), "Archive:  /home/michal/Pobrane/baltimore-911-calls" : { "zip" : 3 }, "field1" : "2015-07-13 10:45:00", "field2" : "Low", "field3" : "CD", "field4" : "PRKG COMPLAINT", "field5" : "P151941005", "field6" : "800 PARK AV", "field7" : "(39.2985163,-76.6184754)" }
 
 ### Skrypty
 Uruchamiamy skrypt script.sh.
