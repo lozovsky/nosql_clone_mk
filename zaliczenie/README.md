@@ -10,7 +10,7 @@ TODO:
 -------
 - [x] Połączenie do bazy
 - [x] Insert pojedynczego dokumentu
-- [ ] Select pojedynczego dokumentu
+- [x] Select pojedynczego dokumentu
 - [ ] Edit pojedynczego dokumentu
 - [ ] Delete pojedynczego dokumentu
 - [ ] Generowanie tabelki z miejscami zgłoszeń
