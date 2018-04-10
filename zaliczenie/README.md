@@ -13,7 +13,7 @@ TODO:
 - [x] Select pojedynczego dokumentu
 - [ ] Edit pojedynczego dokumentu
 - [ ] Delete pojedynczego dokumentu
-- [ ] Generowanie tabelki z miejscami zgłoszeń
+- [ ] Generowanie mapki z miejscami zgłoszeń
 - [ ] Zliczenie, w której dzielnicy było najwięcej zgłoszeń
 - [ ] Select na podstawie wprowadzonej dzielnicy
 - [ ] Replica Set
