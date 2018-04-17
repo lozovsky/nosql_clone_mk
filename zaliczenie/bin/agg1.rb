@@ -26,13 +26,11 @@ conn = Connection.new
 db = conn.client.database
 alarms = conn.alarms
 
-results = alarms.find.aggregate([ {'$group' => { '_id' => '$description',
-                                                 'count' => { '$sum' => 1}
-                                                  }
-                                                },
-                                  {'$sort' => {count: -1}},
-                                  {'$limit' => Integer(limit)}
-                                                ])
+results = alarms.aggregate([
+  {'$group' => { '_id' => '$description','count' => { '$sum' => 1}}},
+  {'$sort' => {count: -1}},
+  {'$limit' => Integer(limit)}
+  ])
 
 
 data = results.to_a
