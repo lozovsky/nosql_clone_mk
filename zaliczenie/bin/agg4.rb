@@ -13,6 +13,7 @@ dist="SS"
 
 results = alarms.aggregate([
     {"$match" => { district: dist}},
+    {"$limit" => 10}
     ])
 
 geojson = Array.new
@@ -24,7 +25,7 @@ results.each do |result|
   type: 'Feature',
   geometry: {
     type: 'Point',
-    coordinates: [longitude, latitude]
+    coordinates: [Float(longitude), Float(latitude)]
   },
   properties: {
     name: result[:incidentLocation]
@@ -32,4 +33,4 @@ results.each do |result|
 }
 end
 
-File.write('cos.geojson',geojson)
+puts geojson
