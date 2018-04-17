@@ -1,1 +1,10 @@
-[{:type=>"Feature", :geometry=>{:type=>"Point", :coordinates=>[39.3421154, -76.6652286]}, :properties=>{:name=>"3000 WYLIE AV"}}, {:type=>"Feature", :geometry=>{:type=>"Point", :coordinates=>[39.2991533, -76.6019534]}, :properties=>{:name=>"800 AISQUITH ST"}}, {:type=>"Feature", :geometry=>{:type=>"Point", :coordinates=>[39.293767, -76.680634]}, :properties=>{:name=>"EDMONDSON AV/LYNDHURST ST"}}, {:type=>"Feature", :geometry=>{:type=>"Point", :coordinates=>[39.301563, -76.548528]}, :properties=>{:name=>"CHAPS PIT BEEF"}}, {:type=>"Feature", :geometry=>{:type=>"Point", :coordinates=>[39.318753, -76.621575]}, :properties=>{:name=>"2600 HUNTINGDON AV"}}, {:type=>"Feature", :geometry=>{:type=>"Point", :coordinates=>[39.3007448, -76.6246361]}, :properties=>{:name=>"1000 TIFFANY CT"}}, {:type=>"Feature", :geometry=>{:type=>"Point", :coordinates=>[39.34611, -76.688]}, :properties=>{:name=>"REISTERSTOWN RD/NEWBERN AV"}}, {:type=>"Feature", :geometry=>{:type=>"Point", :coordinates=>[39.303599, -76.611941]}, :properties=>{:name=>"E BIDDLE ST/GUILFORD AV"}}, {:type=>"Feature", :geometry=>{:type=>"Point", :coordinates=>[39.303599, -76.611941]}, :properties=>{:name=>"E BIDDLE ST/GUILFORD AV"}}, {:type=>"Feature", :geometry=>{:type=>"Point", :coordinates=>[39.303763, -76.607928]}, :properties=>{:name=>"GREENMOUNT AV/E BIDDLE ST"}}]
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [125.6, 10.1]
+  },
+  "properties": {
+    "name": "Dinagat Islands"
+  }
+}
