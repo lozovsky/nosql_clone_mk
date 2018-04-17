@@ -13,7 +13,7 @@ TODO:
 - [x] Insert pojedynczego dokumentu
 - [x] Zliczenie typów zgloszeń (tabelka)
 - [x] Zliczenie zgloszeń w poszególnych dzielnicach (diagram)
-- [ ] Select na podstawie wprowadzonej dzielnicy
+- [x] Select na podstawie wprowadzonej dzielnicy
 - [ ] Generowanie mapki z miejscami zgłoszeń
 - [ ] Replica Set
 - [ ] Testy
