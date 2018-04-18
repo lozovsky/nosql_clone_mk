@@ -108,3 +108,58 @@ Opis
 * W przypadku Replica Set najszybciej wykonkują się importy przy ustawieniach {... j: false}.
 * Duże zbiory danych potrzebują dużej mocy obliczeniowej, aby wykonywać się stusunkowo szybko.
 * Mój komputer jest zdecydowanie za słaby na wykonywanie tego typu czynności.
+
+### git sizer --verbose
+[source,bash]
+Processing blobs: 153
+Processing trees: 123
+Processing commits: 48
+Matching commits to trees: 48
+Processing annotated tags: 0
+Processing references: 3
+| Name                         | Value     | Level of concern               |
+| ---------------------------- | --------- | ------------------------------ |
+| Overall repository size      |           |                                |
+| * Commits                    |           |                                |
+|   * Count                    |    48     |                                |
+|   * Total size               |  14.5 KiB |                                |
+| * Trees                      |           |                                |
+|   * Count                    |   123     |                                |
+|   * Total size               |  32.0 KiB |                                |
+|   * Total tree entries       |   904     |                                |
+| * Blobs                      |           |                                |
+|   * Count                    |   153     |                                |
+|   * Total size               |  5.08 MiB |                                |
+| * Annotated tags             |           |                                |
+|   * Count                    |     0     |                                |
+| * References                 |           |                                |
+|   * Count                    |     3     |                                |
+|                              |           |                                |
+| Biggest objects              |           |                                |
+| * Commits                    |           |                                |
+|   * Maximum size         [1] |   699 B   |                                |
+|   * Maximum parents      [2] |     2     |                                |
+| * Trees                      |           |                                |
+|   * Maximum entries      [3] |    11     |                                |
+| * Blobs                      |           |                                |
+|   * Maximum size         [4] |  4.90 MiB |                                |
+|                              |           |                                |
+| History structure            |           |                                |
+| * Maximum history depth      |    46     |                                |
+| * Maximum tag depth          |     0     |                                |
+|                              |           |                                |
+| Biggest checkouts            |           |                                |
+| * Number of directories  [3] |    12     |                                |
+| * Maximum path depth     [3] |     3     |                                |
+| * Maximum path length    [3] |    38 B   |                                |
+| * Number of files        [5] |    64     |                                |
+| * Total size of files    [6] |  4.94 MiB |                                |
+| * Number of symlinks         |     0     |                                |
+| * Number of submodules       |     0     |                                |
+
+[1]  9cc6302a4f6dcba31d14d4408d2736d7453fa6ef
+[2]  9a9ab7d2c7621bc6a3daf7849ccc2ca4f750684b
+[3]  147d70dd70c5aceac7ab543d9b5c9929f6334a86 (refs/heads/master^{tree})
+[4]  83a1d22cb90ae3526261c8b3f8783a22ec1a1924 (refs/heads/master:zaliczenie/data/alarms.json)
+[5]  2f35557b86838ce58dadb579d37373fa3d20a2c4 (bc068a171391ff25688a65e85efa2ed4f33c8af1^{tree})
+[6]  82653d7f3835c5cb02034f14430d9bf6d45afd81 (961587494cc465d1a1485eb7fdb4d92a0feae451^{tree})
