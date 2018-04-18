@@ -5,7 +5,7 @@ Opis
 -------
 Projekt został napisany w Ruby i korzysta z [Ruby MongoDB Driver](https://docs.mongodb.com/ruby-driver/master/).
 1. Przed użyciem aplikacji należy uruchomić [Replica Set](https://github.com/egzamin/nosql/tree/master/replica_sets).
-2. Uruchamiamy skyprt import.sh, znajdujący sie w folderze bin. Wykona on import do replica set bazy znajdujądej się w folderze data (20 000 dokumentów).
+2. Uruchamiamy skyprt import.sh, znajdujący sie w folderze bin. Wykona on import do replica set danych znajdujądej się w folderze data (20 000 dokumentów).
 3. Następnie należy uruchumić rspec, aby upewnić się czy połączenie z baza jest poprawne.
 
 Skrypty
@@ -102,7 +102,7 @@ $ ./agg3.rb -d <district> # zwraca zliczone powody w dzielnicy <district>
 ```
 W przypadku nie podania parametru, skrypt wybierze dzielnice SS.
 
-Lista przykładowych dzielnic: NE,CD,SD,ND,SW,NW,ED,CW,TRU,SS
+Lista przykładowych dzielnic: NE,CD,SD,ND,SW,NW,ED,CW,TRU,SS.
 
 4. **bin/insert_one.rb**
 
