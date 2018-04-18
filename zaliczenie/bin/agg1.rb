@@ -13,7 +13,7 @@ end
 begin
   optparse.parse!
 rescue OptionParser::MissingArgument
-  puts "\nUse -l <numer> to set a limit of showing description.\n"
+  puts "\nUse -l <numer> to set a limit of showing list of descriptions.\n"
 end
 
 if options[:limit]
@@ -40,7 +40,7 @@ xm.table {
   data.each { |row| xm.tr { row.values.each { |value| xm.td(value)}}}
 }
 
-if File.file?('tabelka1.html')
-  File.truncate('tabelka1.html',0)
+if File.file?('descriptions_count.html')
+  File.truncate('descriptions_count.html',0)
 end
-File.write('tabelka1.html',"#{xm}")
+File.write('descriptions_count.html',"#{xm}")

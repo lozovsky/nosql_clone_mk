@@ -15,8 +15,8 @@ TODO:
 - [x] Zliczenie zgloszeń w poszególnych dzielnicach (diagram)
 - [x] Select na podstawie wprowadzonej dzielnicy
 - [ ] Generowanie mapki z miejscami zgłoszeń
-- [ ] Replica Set
-- [ ] Testy
+- [x] Replica Set
+- [x] Test na connection
 
 
 Rspec
