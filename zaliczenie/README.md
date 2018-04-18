@@ -10,7 +10,8 @@ Projekt został napisany w Ruby i korzysta z [Ruby MongoDB Driver](https://docs.
 
 Skrypty
 -------
-1. bin/agg1.rb
+1. **bin/agg1.rb**
+
 Skrypt zlicza ilość wystąpień poszczególnych powodów zgloszeń telefonicznych.
 
 ```
@@ -86,18 +87,21 @@ Tabelka wygenerowana przy użyciu komendy ./agg1.rb -l 15
 <to_s/>
 
 
-2. bin/agg2.rb
+2. **bin/agg2.rb**
+
 Skrypt tworzy diagram z statystykami zgloszeń w poszczególnych dzielnicach.
 Przykładowy [Diagram](https://github.com/nosql/app-cli-mkassjanski/blob/master/zaliczenie/bin/district_alarms.pdf)
 
-3. bin/agg3.rb
+3. **bin/agg3.rb**
+
 Skrypt zwraca statystyki zgloszeń w wybranej dzielnicy.
 ```
 $ ./agg3.rb -d <district> # zwraca zliczone powody w dzielnicy <district>
 ```
 Lista przykładowych dzielnic: NE,CD,SD,ND,SW,NW,ED,CW,TRU,SS
 
-3. bin/insert_one.rb
+3. **bin/insert_one.rb**
+
 Skrypt pozwala na dodanie swojego zgłoszenia do bazy.
 
 TODO:
