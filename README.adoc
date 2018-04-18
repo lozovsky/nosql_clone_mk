@@ -1,5 +1,9 @@
 ## Repozytorium z przedmiotu NoSQL.
 
+### Projekt na zaliczenie
+Projet na zaliczenie znajduje się w folderze "zaliczenie".
+link:https://github.com/nosql/app-cli-mkassjanski/tree/master/zaliczenie[Link do projektu na zaliczenie].
+
 Informacje o zbiorze danych (w KB):
 [source,js]
 db.alarms.stats( { scale : 1024 } )
@@ -108,3 +112,51 @@ Opis
 * W przypadku Replica Set najszybciej wykonkują się importy przy ustawieniach {... j: false}.
 * Duże zbiory danych potrzebują dużej mocy obliczeniowej, aby wykonywać się stusunkowo szybko.
 * Mój komputer jest zdecydowanie za słaby na wykonywanie tego typu czynności.
+
+### git sizer --verbose
+[source,bash]
+Processing blobs: 153
+Processing trees: 123
+Processing commits: 48
+Matching commits to trees: 48
+Processing annotated tags: 0
+Processing references: 3
+| Name                         | Value     | Level of concern               |
+| ---------------------------- | --------- | ------------------------------ |
+| Overall repository size      |           |                                |
+| * Commits                    |           |                                |
+|   * Count                    |    48     |                                |
+|   * Total size               |  14.5 KiB |                                |
+| * Trees                      |           |                                |
+|   * Count                    |   123     |                                |
+|   * Total size               |  32.0 KiB |                                |
+|   * Total tree entries       |   904     |                                |
+| * Blobs                      |           |                                |
+|   * Count                    |   153     |                                |
+|   * Total size               |  5.08 MiB |                                |
+| * Annotated tags             |           |                                |
+|   * Count                    |     0     |                                |
+| * References                 |           |                                |
+|   * Count                    |     3     |                                |
+|                              |           |                                |
+| Biggest objects              |           |                                |
+| * Commits                    |           |                                |
+|   * Maximum size         [1] |   699 B   |                                |
+|   * Maximum parents      [2] |     2     |                                |
+| * Trees                      |           |                                |
+|   * Maximum entries      [3] |    11     |                                |
+| * Blobs                      |           |                                |
+|   * Maximum size         [4] |  4.90 MiB |                                |
+|                              |           |                                |
+| History structure            |           |                                |
+| * Maximum history depth      |    46     |                                |
+| * Maximum tag depth          |     0     |                                |
+|                              |           |                                |
+| Biggest checkouts            |           |                                |
+| * Number of directories  [3] |    12     |                                |
+| * Maximum path depth     [3] |     3     |                                |
+| * Maximum path length    [3] |    38 B   |                                |
+| * Number of files        [5] |    64     |                                |
+| * Total size of files    [6] |  4.94 MiB |                                |
+| * Number of symlinks         |     0     |                                |
+| * Number of submodules       |     0     |                                |

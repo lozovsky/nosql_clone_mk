@@ -26,15 +26,11 @@ conn = Connection.new
 db = conn.client.database
 alarms = conn.alarms
 
-results = alarms.find.aggregate([
+results = alarms.aggregate([
     {"$match" => { district: dist}},
-    {'$group' => { '_id' => '$description',
-                                                 'count' => { '$sum' => 1}
-                                                  }
-                                                },
-                                  {'$sort' => {count: -1}},
-
-                                                ])
+    {'$group' => { '_id' => '$description', 'count' => { '$sum' => 1}}},
+    {'$sort' => {count: -1}},
+    ])
 
 
 puts results.to_a

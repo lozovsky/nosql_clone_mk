@@ -24,7 +24,7 @@ for i in 0..results.to_a.size()-1
 end
 h=Hash[*arr]
 
-  Prawn::Document.generate("alarms.pdf") do
+  Prawn::Document.generate("district_alarms.pdf") do
     data = {alarms: h}
     chart data
   end
