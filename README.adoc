@@ -1,5 +1,9 @@
 ## Repozytorium z przedmiotu NoSQL.
 
+### Projekt na zaliczenie
+Projet na zaliczenie znajduje się w folderze "zaliczenie".
+link:https://github.com/nosql/app-cli-mkassjanski/tree/master/zaliczenie[Link do projektu na zaliczenie].
+
 Informacje o zbiorze danych (w KB):
 [source,js]
 db.alarms.stats( { scale : 1024 } )
@@ -27,12 +31,6 @@ db.alarms.findOne()
 	"incidentLocation" : "600 E FAYETTE ST",
 	"location" : "(39.2906737,-76.6071600)"
 }
-
-
-### Projekt na zaliczenie
-Projet na zaliczenie znajduje się w folderze "zaliczenie".
-link:https://github.com/nosql/app-cli-mkassjanski/tree/master/zaliczenie[Link do projektu na zaliczenie]
-
 
 ### Skrypty
 Uruchamiamy skrypt script.sh.
